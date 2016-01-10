@@ -68,7 +68,51 @@ CREATE TABLE menu (
    KEY id_kategori (id_kategori)) 
    ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE pegawai (
+CREATE TABLE pelayan (
+   id_pegawai varchar(10) NOT NULL,
+   nama_pegawai varchar(35) NOT NULL,
+   alamat varchar(35) NOT NULL,
+   no_hp varchar(12) NOT NULL,
+   password varchar(50) NOT NULL,
+   foto text,
+   jabatan enum('Koki','Kasir','Pantry','Pelayan','CS') NOT NULL,
+   PRIMARY KEY (id_pegawai)) 
+   ENGINE=InnoDB DEFAULT CHARSET=latin1;
+   
+CREATE TABLE koki (
+   id_pegawai varchar(10) NOT NULL,
+   nama_pegawai varchar(35) NOT NULL,
+   alamat varchar(35) NOT NULL,
+   no_hp varchar(12) NOT NULL,
+   password varchar(50) NOT NULL,
+   foto text,
+   jabatan enum('Koki','Kasir','Pantry','Pelayan','CS') NOT NULL,
+   PRIMARY KEY (id_pegawai)) 
+   ENGINE=InnoDB DEFAULT CHARSET=latin1;
+   
+CREATE TABLE cs (
+   id_pegawai varchar(10) NOT NULL,
+   nama_pegawai varchar(35) NOT NULL,
+   alamat varchar(35) NOT NULL,
+   no_hp varchar(12) NOT NULL,
+   password varchar(50) NOT NULL,
+   foto text,
+   jabatan enum('Koki','Kasir','Pantry','Pelayan','CS') NOT NULL,
+   PRIMARY KEY (id_pegawai)) 
+   ENGINE=InnoDB DEFAULT CHARSET=latin1;
+   
+CREATE TABLE pantry (
+   id_pegawai varchar(10) NOT NULL,
+   nama_pegawai varchar(35) NOT NULL,
+   alamat varchar(35) NOT NULL,
+   no_hp varchar(12) NOT NULL,
+   password varchar(50) NOT NULL,
+   foto text,
+   jabatan enum('Koki','Kasir','Pantry','Pelayan','CS') NOT NULL,
+   PRIMARY KEY (id_pegawai)) 
+   ENGINE=InnoDB DEFAULT CHARSET=latin1;
+   
+CREATE TABLE kasir (
    id_pegawai varchar(10) NOT NULL,
    nama_pegawai varchar(35) NOT NULL,
    alamat varchar(35) NOT NULL,
