@@ -5,7 +5,7 @@ error_reporting(0);
   $server    = "localhost";
   $username  = "root";
   $password  = "";
-  $database  = "restoran";
+  $database  = "brotoresto";
   
   mysql_connect($server, $username, $password)
   		or die ("<h2 align = 'center'><b><font color='red'>Database tidak 	terhubung!!</font></b></h2>");
