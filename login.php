@@ -1,4 +1,10 @@
-
+<?php
+	session_start();
+	if(isset($_SESSION[nama_pegawai]) and isset($_SESSION[pass_pegawai])){
+		header('location:'.$_SESSION[jabatan]);
+	}else{
+	
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -21,5 +27,5 @@
 
 	
 <?php
-
+	}
 ?>
